@@ -1,8 +1,8 @@
 :root {
-    --cor-principal: #1a365d;
-    --cor-secundaria: #3182ce;
+    --cor-principal: #FF69B4;
+    --cor-secundaria: #ff1493;
     --bg-body: #f4f6f8;
-    --bg-header: #1a365d;
+    --bg-header: #FF69B4;
     --bg-article: #ffffff;
     --texto-cor: #2d3748;
 }
@@ -12,7 +12,6 @@
 }
 
 body {
-    text-align: center;
     background-color: var(--bg-body);
     color: var(--texto-cor);
     font-family: Arial, sans-serif;
@@ -27,6 +26,7 @@ header {
     margin: 0 auto;
     padding: 24px;
     position: relative;
+    text-align: center;
     border-radius: 0 0 12px 12px;
 }
 
@@ -58,40 +58,35 @@ main {
 
 article {
     background-color: var(--bg-article);
-    padding: 24px;
+    padding: 32px;
     border-radius: 12px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
 }
 
 article h2 {
     color: var(--cor-principal);
-    font-size: 22px;
-    margin-top: 12px;
+    font-size: 26px;
+    margin-top: 16px;
     margin-bottom: 8px;
-    align-self: center;
 }
 
 .artigo-autor {
     font-weight: bold;
     color: #4a5568;
     margin-bottom: 16px;
-    font-size: 14px;
-    align-self: center;
+    font-size: 15px;
 }
 
 .texto-post {
-    line-height: 1.5;
-    text-align: left;
+    line-height: 1.6;
+    text-align: center;
     margin-bottom: 16px;
-    width: 100%;
+    font-size: 16px;
 }
 
 .fonte {
-    text-align: left;
+    text-align: center;
     font-size: 14px;
     margin-bottom: 16px;
 }
@@ -113,7 +108,7 @@ article h2 {
 .botoes-acao {
     display: flex;
     gap: 8px;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .btn-acao {
@@ -130,8 +125,8 @@ article h2 {
 /* Modo Escuro Ativo */
 .tema-escuro {
     --bg-body: #1a202c;
-    --bg-header: #2d3748;
+    --bg-header: #4d1f36;
     --bg-article: #2d3748;
     --texto-cor: #e2e8f0;
-    --cor-principal: #63b3ed;
+    --cor-principal: #ff69b4;
 }

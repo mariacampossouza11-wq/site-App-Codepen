@@ -15,10 +15,10 @@
 
     <main>
         <article>
-            <img src="https://i.imgur.com/83Z0icx.png" alt="Ícone de caixa de madeira" class="post-img">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Ícone do post" class="post-img">
             <h2>O primeiro mouse não era de plástico</h2>
             <p class="artigo-autor">Por: Giulliana Cestari</p>
-            <p>Antes do design ergonômico e das luzes RGB, o primeiro mouse do mundo foi construído em madeira! Criado por Douglas Engelbart em 1964, ele tinha o formato de uma caixa quadrada e apenas um botão.</p>
+            <p class="texto-post">Antes do design ergonômico e das luzes RGB, o primeiro mouse do mundo foi construído em madeira! Criado por Douglas Engelbart em 1964, ele tinha o formato de uma caixa quadrada e apenas um botão.</p>
             <p class="fonte">Fonte: <a href="https://www.tecmundo.com.br" target="_blank">TecMundo</a></p>
             <div class="botoes-acao">
                 <button class="btn-acao">❤️<span>0</span></button>
@@ -27,10 +27,10 @@
         </article>
 
         <article>
-            <img src="https://i.imgur.com/83Z0icx.png" alt="Ícone de tecnologia" class="post-img">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" alt="Ícone do post" class="post-img">
             <h2>O primeiro videogame da história</h2>
             <p class="artigo-autor">Por: Maria Raphaela</p>
-            <p>Você sabia que o primeiro jogo de videogame foi criado em 1958? Era um simulador de tênis bem simples chamado "Tennis for Two", rodando em um computador de laboratório com uma telinha redonda.</p>
+            <p class="texto-post">Você sabia que o primeiro jogo de videogame foi criado em 1958? Era um simulador de tênis bem simples chamado "Tennis for Two", rodando em um computador de laboratório com uma telinha redonda.</p>
             <p class="fonte">Fonte: <a href="https://www.tecmundo.com.br" target="_blank">TecMundo</a></p>
             <div class="botoes-acao">
                 <button class="btn-acao">❤️<span>0</span></button>
@@ -40,13 +40,11 @@
     </main>
 
     <script>
-        // Lógica do Tema Escuro
         const botaoTema = document.getElementById("botao-tema");
         botaoTema.addEventListener("click", function () {
             document.body.classList.toggle("tema-escuro");
         });
 
-        // Lógica de Curtidas
         let botoes = document.querySelectorAll(".btn-acao");
         botoes.forEach(function (botao) {
             let curtiu = false;

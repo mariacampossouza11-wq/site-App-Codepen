@@ -1,28 +1,128 @@
+:root {
+    --cor-principal: #1a365d;
+    --cor-secundaria: #3182ce;
+    --bg-body: #f4f6f8;
+    --bg-header: #1a365d;
+    --bg-article: #ffffff;
+    --texto-cor: #2d3748;
+}
+
+* {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 body {
     text-align: center;
+    background-color: var(--bg-body);
+    color: var(--texto-cor);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 header {
-    background-color: #FF69B4;
+    background-color: var(--bg-header);
     color: #FFFFFF;
     max-width: 800px;
     margin: 0 auto;
-    padding: 16px;
+    padding: 24px;
+    position: relative;
+    border-radius: 0 0 12px 12px;
+}
+
+.btn-tema-escuro {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.tema-escuro .btn-tema-escuro {
+    background-color: var(--cor-secundaria);
 }
 
 main {
-    background-color: #FFFFFF;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 24px auto;
     padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
 article {
-    display: flex;
+    background-color: var(--bg-article);
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    text-align: center;
 }
 
-img {
+article h2 {
+    color: var(--cor-principal);
+    font-size: 24px;
+    margin-top: 12px;
+}
+
+.artigo-autor {
+    font-weight: bold;
+    color: #4a5568;
+    margin-bottom: 16px;
+}
+
+article p {
+    line-height: 1.5;
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+.fonte {
+    text-align: left;
+    font-size: 14px;
+}
+
+.fonte a {
+    color: var(--cor-secundaria);
+    text-decoration: none;
+}
+
+.post-img {
     width: 80px;
     height: 80px;
     border-radius: 8px;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+}
+
+.botoes-acao {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-start;
+}
+
+.btn-acao {
+    background-color: #edf2f7;
+    border: 1px solid #cbd5e0;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* Modo Escuro Ativo */
+.tema-escuro {
+    --bg-body: #1a202c;
+    --bg-header: #2d3748;
+    --bg-article: #2d3748;
+    --texto-cor: #e2e8f0;
+    --cor-principal: #63b3ed;
 }
